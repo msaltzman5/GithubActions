@@ -47,7 +47,7 @@ namespace GithubActionsLab
                     var x = GetInput("Enter x: ");
                     var y = GetInput("Enter y: ");
                     var result = operation(x, y);
-                    Console.WriteLine($"Result: {result}");
+                    Console.WriteLine($"Result: {result}\n");
                 }
                 catch (Exception e)
                 {
@@ -84,7 +84,7 @@ namespace GithubActionsLab
         // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            throw new NotImplementedException();
+            return Math.Pow(double.Parse(x), double.Parse(y)); 
         }
     }
 
